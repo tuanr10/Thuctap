@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Latest compiled and minified CSS -->
+    <!-- Latest compiled and minified CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="./css/img/logo (1).webp" />
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="./css/reset.css" rel="stylesheet" />
+    <link href="./css/style.css" rel="stylesheet" />
+
+    <title>The fire monkey</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="javascript:void(0)">
+          <img src="./css/img/logo (1).webp" alt="logo" width="50px" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mynavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mynavbar">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="javascript:void(0)">Sneaker</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="javascript:void(0)">Quần áo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="javascript:void(0)">Giới thiệu</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="text"
+              placeholder="Tìm kiếm..."
+            />
+            <button class="btn btn-danger" type="button">
+              <img src="./css/img/search.svg" alt="search" />
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <div class="content">
+      <!-- Carousel -->
+      <div
+        id="content__carousel"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <!-- Indicators/dots -->
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#content_carousel"
+            data-bs-slide-to="0"
+            class="active"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#content__carousel"
+            data-bs-slide-to="1"
+          ></button>
+        </div>
+
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="./css/img/chaybo.webp"
+              alt="Giày chạy bộ"
+              class="d-inline-block w-100 h-75"
+            />
+          </div>
+
+          <div class="carousel-item">
+            <img
+              src="./css/img/index_banner_medium_1___1_image.webp"
+              alt="giày trắng"
+              class="d-inline-block w-100 h-75"
+            />
+          </div>
+        </div>
+
+        <!-- Left and right controls/icons -->
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#content__carousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#content__carousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+      <section class="py-5">
+        <div id="content__categories" class="container px-4 px-lg-5 mt-5">
+          <h3>Adidas</h3>
+          <div
+            class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center"
+          >
+            <div class="col mb-5">
+              <div class="card h-100">
+                <!-- Product image-->
+                <img
+                  class="card-img-top"
+                  src="./css/img/ultraboost-20-bblue.jpg"
+                  alt="..."
+                />
+                <!-- Product details-->
+                <div class="card-body p-4">
+                  <div class="text-center">
+                    <!-- Product name-->
+                    <h5 class="fw-bolder">Ultraboost 2021 Xanh</h5>
+                    <!-- Product price-->
+                    2.200.000 VND
+                  </div>
+                </div>
+                <!-- Product actions-->
+                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                  <div class="text-center">
+                    <a class="btn btn-outline-dark mt-auto" href="#">Mua</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-5">
+              <div class="card h-100">
+                <!-- Sale badge-->
+                <div class="badge bg-dark text-white position-absolute">
+                  Sale
+                </div>
+                <!-- Product image-->
+                <img
+                  class="card-img-top"
+                  src="./css/img/ultraboost trắng.webp"
+                  alt="..."
+                />
+                <!-- Product details-->
+                <div class="card-body p-4">
+                  <div class="text-center">
+                    <!-- Product name-->
+                    <h5 class="fw-bolder">Ultraboost 2021 Trắng</h5>
+
+                    <!-- Product price-->
+                    <span class="text-muted text-decoration-line-through"
+                      >2.800.000 VND</span
+                    >
+                    1.800.000 VND
+                  </div>
+                </div>
+                <!-- Product actions-->
+                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                  <div class="text-center">
+                    <a class="btn btn-outline-dark mt-auto" href="#">Mua</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-5">
+              <div class="card h-100">
+                <!-- Sale badge-->
+                <div class="badge bg-dark text-white position-absolute">
+                  Sale
+                </div>
+                <!-- Product image-->
+                <img
+                  class="card-img-top"
+                  src="./css/img/superstar.webp"
+                  alt="..."
+                />
+                <!-- Product details-->
+                <div class="card-body p-4">
+                  <div class="text-center">
+                    <!-- Product name-->
+                    <h5 class="fw-bolder">Super Star Trắng</h5>
+                    <!-- Product price-->
+                    <span class="text-muted text-decoration-line-through"
+                      >1.500.000 VND</span
+                    >
+                    1.000.000 VND
+                  </div>
+                </div>
+                <!-- Product actions-->
+                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                  <div class="text-center">
+                    <a class="btn btn-outline-dark mt-auto" href="#">Mua</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-5">
+              <div class="card h-100">
+                <!-- Product image-->
+                <img class="card-img-top" src="./css/img/nmd.webp" alt="..." />
+                <!-- Product details-->
+                <div class="card-body p-4">
+                  <div class="text-center">
+                    <!-- Product name-->
+                    <h5 class="fw-bolder">NMD trắng</h5>
+
+                    <!-- Product price-->
+                    1.200.000 VND
+                  </div>
+                </div>
+                <!-- Product actions-->
+                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                  <div class="text-center">
+                    <a class="btn btn-outline-dark mt-auto" href="#">Mua</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-5">
+              <div class="card h-100">
+                <!-- Sale badge-->
+                <div class="badge bg-dark text-white position-absolute">
+                  Sale
+                </div>
+                <!-- Product image-->
+                <img class="card-img-top" src="./css/img/mu23.webp" alt="..." />
+                <!-- Product details-->
+                <div class="card-body p-4">
+                  <div class="text-center">
+                    <!-- Product name-->
+                    <h5 class="fw-bolder">Áo MU 2023</h5>
+                    <!-- Product price-->
+                    <span class="text-muted text-decoration-line-through"
+                      >3.000.000 VND</span
+                    >
+                    2.100.000 VND
+                  </div>
+                </div>
+                <!-- Product actions-->
+                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                  <div class="text-center">
+                    <a class="btn btn-outline-dark mt-auto" href="#">Mua</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-5">
+              <div class="card h-100">
+                <!-- Product image-->
+                <img class="card-img-top" src="./css/img/tee.jpg" alt="..." />
+                <!-- Product details-->
+                <div class="card-body p-4">
+                  <div class="text-center">
+                    <!-- Product name-->
+                    <h5 class="fw-bolder">T-shirt adidas</h5>
+                    <!-- Product price-->
+                    120.000 - 280.000 VND
+                  </div>
+                </div>
+                <!-- Product actions-->
+                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                  <div class="text-center">
+                    <a class="btn btn-outline-dark mt-auto" href="#">Mua</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-5">
+              <div class="card h-100">
+                <!-- Sale badge-->
+                <div class="badge bg-dark text-white position-absolute">
+                  Sale
+                </div>
+                <!-- Product image-->
+                <img class="card-img-top" src="./css/img/balo.webp" alt="..." />
+                <!-- Product details-->
+                <div class="card-body p-4">
+                  <div class="text-center">
+                    <!-- Product name-->
+                    <h5 class="fw-bolder">Balo Adidas</h5>
+
+                    <!-- Product price-->
+                    <span class="text-muted text-decoration-line-through"
+                      >820.000 VND</span
+                    >
+                    500.000 VND
+                  </div>
+                </div>
+                <!-- Product actions-->
+                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                  <div class="text-center">
+                    <a class="btn btn-outline-dark mt-auto" href="#">Mua</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-5">
+              <div class="card h-100">
+                <!-- Product image-->
+                <img
+                  class="card-img-top"
+                  src="./css/img/hoodie.webp"
+                  alt="..."
+                />
+                <!-- Product details-->
+                <div class="card-body p-4">
+                  <div class="text-center">
+                    <!-- Product name-->
+                    <h5 class="fw-bolder">Hoddie nữ</h5>
+
+                    <!-- Product price-->
+                    400.000 VND
+                  </div>
+                </div>
+                <!-- Product actions-->
+                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                  <div class="text-center">
+                    <a class="btn btn-outline-dark mt-auto" href="#">Mua</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-white text-muted">
+      <section
+        class="d-flex justify-content-center justify-content-lg-between border-top"
+      >
+        <div class="container text-center text-md-start mt-5">
+          <!-- Grid row -->
+          <div class="row mt-3">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <!-- Content -->
+              <div class="text-uppercase fw-bold mb-4">
+                <i class="fas fa-gem me-3 text-secondary"></i
+                ><img src="./css/img/logo (1).webp" alt="" />
+              </div>
+              <h6>Địa chỉ: Đông Anh – Hà Nội</h6>
+              <h6>Hotline: 0983 151 780</h6>
+              <h6>Email: TFM3017@gmail.com</h6>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">Giới thiệu</h6>
+              <p>
+                <a href="#!" class="text-reset text-decoration-none"
+                  >Sneakers</a
+                >
+              </p>
+              <p>
+                <a href="#!" class="text-reset text-decoration-none"
+                  >Champion</a
+                >
+              </p>
+              <p>
+                <a href="#!" class="text-reset text-decoration-none"
+                  >Giảm giá</a
+                >
+              </p>
+              <p>
+                <a href="#!" class="text-reset text-decoration-none"
+                  >Hàng order</a
+                >
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">Chính sách</h6>
+              <p>
+                <a href="#!" class="text-reset text-decoration-none">Đổi trả</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset text-decoration-none"
+                  >Giao hàng</a
+                >
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">Hỗ trợ</h6>
+              <p>Tư vấn 24/7</p>
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row -->
+        </div>
+      </section>
+      <!-- Section: Links  -->
+    </footer>
+    <!-- Footer -->
+  </body>
+</html>
